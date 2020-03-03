@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <script>
+        const names=['olu','maleem','azeez']
+
+        const fullname= names.map(function(name) {
+            return `${name} Bello`
+        });
+        
+        const fullname2= names.map(name => {
+            return `${name} Bello`
+        });
+
+        
+        const fullname3= names.map(name => {
+            return `${name} Bello`
+        });
+
+        const fullname4= names.map(name => `${name} Bello`);
+        
+        // fullname{0-4} does the same thing
+        console.log(fullname4);
+
+        function barkType(name,sound) {
+            console.log(`${name} sound is ${sound}`);
+        }
+
+        const barkType2 = (name,sound) => `${name} sound is ${sound}`;
+
+        console.log(barkType2('poodled','woof!'));
+    </script>
+</body>
+</html>
