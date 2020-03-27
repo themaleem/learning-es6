@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <script>
+        const competition='Blitz chess';
+        const names=['olu','maleem','azeez'];
+        const winners= names.map((name,i)=> ({
+          'name':name,
+          competition,
+          'place':i
+        }));
+
+        const ages=[23,45,64,3,34,56,4,3,2,34,556,432,34,78,99]
+        const below_60= ages.filter(age => age<= 60)
+        console.log(below_60)
+
+    </script>
+</body>
+</html>
